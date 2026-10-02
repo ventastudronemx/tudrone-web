@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tudrone — Drones agrícolas DJI AGRAS</title>
+  <meta name="description" content="Venta de drones agrícolas DJI AGRAS en México: T25P, T70P y T100. Capacitación, financiamiento, refacciones y demo en tu parcela.">
+  <link rel="icon" href="/assets/img/tudrone-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+  <header class="site-head" id="head">
+    <a class="brand" href="/" aria-label="tudrone — inicio">
+      <img src="/assets/img/tudrone-bw.jpg" alt="tudrone">
+      <span>DJI AGRAS</span>
+    </a>
+    <nav class="site-head__nav">
+      <a href="#modelos" class="btn btn--ghost head-only-wide">Modelos</a>
+      <a href="#demo" class="btn btn--solid">Agenda una demo</a>
+    </nav>
+  </header>
+
+  <!-- ============ APERTURA: UNA PASADA ============ -->
+  <section class="reel" id="reel" data-has-video="true" aria-label="Corrida de aspersión con dron DJI AGRAS">
+    <div class="reel__stage">
+      <video class="reel__video" id="reelVideo" muted playsinline preload="auto" poster="/assets/video/pasada-poster.jpg">
+        <source src="/assets/video/pasada-mobile.mp4" type="video/mp4" media="(max-width: 820px)">
+        <source src="/assets/video/pasada-desktop.mp4" type="video/mp4">
+      </video>
+      <canvas class="reel__canvas" id="reelCanvas" aria-hidden="true"></canvas>
+      <div class="reel__scrim" aria-hidden="true"></div>
+
+      <div class="hud">
+        <div class="hud__live"><span class="dot"></span><span id="liveTxt">Aspersión en curso</span></div>
+
+        <div class="hud__center" id="hero">
+          <h1>Una pasada basta.</h1>
+          <p>Una corrida real de aspersión con DJI AGRAS. Baja para volar.</p>
+        </div>
+
+        <div class="hud__counters" id="counters" style="opacity:0">
+          <div><span class="n" id="cHa">0.0</span><span class="k">Hectáreas</span></div>
+          <div><span class="n" id="cAgua">0</span><span class="k">Litros de agua ahorrada</span></div>
+          <div><span class="n" id="cMin">22</span><span class="k">Min · vs 6 h a mano</span></div>
+        </div>
+
+        <div class="hud__hint" id="hint"><span>Scroll</span><span class="chev"></span></div>
+        <div class="hud__out" id="out"><span>Sigue — conoce el equipo</span><span class="chev"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============ CONECTOR + STATS ============ -->
+    <section class="harvest">
+      <div class="wrap">
+        <p class="eyebrow">Lo que acabas de ver</p>
+        <div class="stats">
+          <div><div class="n">14.2</div><div class="k">hectáreas cubiertas en una sola corrida</div></div>
+          <div><div class="n">1,240 L</div><div class="k">de agua ahorrada frente a aspersión terrestre</div></div>
+          <div><div class="n">22 min</div><div class="k">de vuelo, contra ~6 h de trabajo manual</div></div>
+        </div>
+        <p class="fine">Parámetros de referencia de una T50. El rendimiento real depende del cultivo, el terreno y la mezcla.</p>
+      </div>
+    </section>
+
+    <!-- ============ MODELOS ============ -->
+    <section class="band" id="modelos">
+      <div class="wrap">
+        <div class="band__head">
+          <p class="eyebrow">La línea AGRAS</p>
+          <h2>Un dron para cada superficie</h2>
+          <p>Los tres usan RTK centímetro a centímetro, aspersores duales de atomización y radar de evasión. Cambia el tanque, el ancho de trabajo y el ritmo.</p>
+        </div>
+        <div class="models">
+          <article class="model">
+            <img class="model__img" src="/assets/img/agras-t25p.png" alt="DJI AGRAS T25P" loading="lazy">
+            <h3>AGRAS T25P</h3>
+            <p class="model__price">$167,000<span>o $283,000 con kit de trabajo</span></p>
+            <p class="use">Compacto y transportable. Parcelas chicas, berries, hortalizas y terrenos irregulares.</p>
+            <dl>
+              <dt>Tanque</dt><dd>20 L</dd>
+              <dt>Ancho</dt><dd>hasta 7 m</dd>
+            </dl>
+            <p class="model__note">Kit = dron + 3 baterías + generador DJI 6000</p>
+          </article>
+          <article class="model model--star">
+            <span class="model__tag">El más pedido</span>
+            <img class="model__img" src="/assets/img/agras-t70p.png" alt="DJI AGRAS T70P" loading="lazy">
+            <h3>AGRAS T70P</h3>
+            <p class="model__price">$192,000<span>o $438,000 con kit de trabajo</span></p>
+            <p class="use">El caballo de batalla para maquila de aspersión y mediana escala.</p>
+            <dl>
+              <dt>Tanque</dt><dd>70 L</dd>
+              <dt>Ancho</dt><dd>hasta 12 m</dd>
+            </dl>
+            <p class="model__note">Kit = dron + 3 baterías + generador DJI 14000</p>
+          </article>
+          <article class="model">
+            <img class="model__img" src="/assets/img/agras-t100.png" alt="DJI AGRAS T100" loading="lazy">
+            <h3>AGRAS T100</h3>
+            <p class="model__price">$310,000<span>o $556,000 con kit de trabajo</span></p>
+            <p class="use">Máxima carga y ritmo. Grandes extensiones: caña, maíz, sorgo y trigo.</p>
+            <dl>
+              <dt>Tanque</dt><dd>100 L</dd>
+              <dt>Ancho</dt><dd>hasta 14 m</dd>
+            </dl>
+            <p class="model__note">Kit = dron + 3 baterías + generador DJI 14000</p>
+          </article>
+        </div>
+        <p class="tradein">¿Ya tienes equipo? <b>Tomamos a cuenta tu AGRAS T40 o T50</b> —y también vehículos 2018 a 2025— para tu siguiente dron.</p>
+        <div class="partner">
+          <img src="/assets/img/dji-agriculture.png" alt="DJI Agriculture">
+          <span>Distribuidor autorizado — equipo, garantía y refacciones originales</span>
+        </div>
+        <p class="fine">Precios de referencia en pesos mexicanos. Ancho de aspersión aproximado; ficha técnica completa DJI en la demo.</p>
+      </div>
+    </section>
+
+    <!-- ============ OPERACIÓN ============ -->
+    <section class="band">
+      <div class="wrap">
+        <div class="band__head">
+          <p class="eyebrow">tudrone completo</p>
+          <h2>Compras un equipo, te llevas una operación</h2>
+        </div>
+        <div class="ops">
+          <div class="op">
+            <h3><i>1</i>Capacitación y certificación</h3>
+            <p>Curso para piloto agrícola y acompañamiento en el trámite de licencia RPAS ante la AFAC. Tu equipo sale volando.</p>
+          </div>
+          <div class="op">
+            <h3><i>2</i>Financiamiento</h3>
+            <p>Planes a 12–36 meses y arrendamiento puro. Estructuramos el pago con tu ciclo agrícola.</p>
+          </div>
+          <div class="op">
+            <h3><i>3</i>Refacciones y servicio</h3>
+            <p>Almacén de hélices, boquillas, baterías y aspersores. Servicio en sitio en las principales zonas agrícolas.</p>
+          </div>
+          <div class="op">
+            <h3><i>4</i>Demo en tu parcela</h3>
+            <p>Llevamos el dron a tu campo y hacemos una corrida real antes de que decidas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="band">
+      <div class="wrap">
+        <div class="band__head">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>De la llamada al primer vuelo</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><b>01</b><div><h3>Diagnóstico</h3><p>Cultivo, hectáreas, topografía y objetivo: aspersión, siembra o fertilización.</p></div></div>
+          <div class="step"><b>02</b><div><h3>Demo en campo</h3><p>Corrida real en tu parcela con el modelo que te conviene.</p></div></div>
+          <div class="step"><b>03</b><div><h3>Cotización y financiamiento</h3><p>Propuesta cerrada: equipo, accesorios, capacitación y plan de pago.</p></div></div>
+          <div class="step"><b>04</b><div><h3>Capacitación</h3><p>Tu equipo aprende a operar, cargar mezcla y dar mantenimiento básico.</p></div></div>
+          <div class="step"><b>05</b><div><h3>Entrega y soporte</h3><p>Configuración RTK, primer vuelo acompañado y línea directa de soporte.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="demo">
+      <div class="wrap">
+        <div class="grid">
+          <div class="cta__intro">
+            <p class="eyebrow">El siguiente paso</p>
+            <h2>Agenda una demo en tu parcela</h2>
+            <p>Un asesor revisa tu caso, te dice qué modelo te conviene y agenda una corrida real sin costo. Cobertura en Sinaloa, Jalisco, Michoacán, Guanajuato, Veracruz y Chiapas.</p>
+            <p class="cta__alt">O escríbenos directo por <a href="#" id="wa">WhatsApp</a>.</p>
+          </div>
+          <div id="formHost">
+            <form id="demoForm" novalidate>
+              <label>Nombre
+                <input type="text" name="nombre" placeholder="Nombre y apellido" autocomplete="name">
+                <span class="err" id="eNombre" hidden>Escribe tu nombre.</span>
+              </label>
+              <div class="row">
+                <label>Teléfono / WhatsApp
+                  <input type="tel" name="tel" placeholder="55 1234 5678" autocomplete="tel">
+                  <span class="err" id="eTel" hidden>Escribe un teléfono válido.</span>
+                </label>
+                <label>Estado
+                  <select name="estado">
+                    <option value="">Elige…</option>
+                    <option>Sinaloa</option><option>Jalisco</option><option>Michoacán</option>
+                    <option>Guanajuato</option><option>Veracruz</option><option>Chiapas</option>
+                    <option>Otro</option>
+                  </select>
+                </label>
+              </div>
+              <div class="row">
+                <label>Cultivo
+                  <input type="text" name="cultivo" placeholder="Agave, maíz, caña…">
+                </label>
+                <label>Hectáreas aprox.
+                  <input type="text" name="ha" inputmode="numeric" placeholder="120">
+                </label>
+              </div>
+              <button type="submit" class="btn btn--solid">Solicitar demo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-top">
+          <img class="mark" src="/assets/img/tudrone-bw.jpg" alt="tudrone">
+          <span class="dji"><img src="/assets/img/dji-agriculture.png" alt="DJI Agriculture"> Distribuidor autorizado</span>
+        </div>
+        <div class="foot-grid">
+          <span>tudrone.mx — Drones agrícolas DJI AGRAS</span>
+          <span>Culiacán · Guadalajara · CDMX</span>
+          <span>hola@tudrone.mx</span>
+        </div>
+        <p class="foot-note">Prototipo del concepto «Una pasada». La escena de apertura es un placeholder generativo — se reemplaza por video real. Cifras ilustrativas.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/js/reel.js" defer></script>
+</body>
+</html>
