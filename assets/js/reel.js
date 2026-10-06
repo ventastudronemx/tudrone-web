@@ -54,8 +54,11 @@
     cMin.textContent = 22;
     liveTxt.textContent = p < 0.04 ? "Preparando la corrida" : (p > 0.92 ? "Corrida completa" : "Aspersión en curso");
 
-    hero.style.opacity = String(clamp(1 - p / 0.16, 0, 1));
+    var heroOp = clamp(1 - p / 0.16, 0, 1);
+    hero.style.opacity = String(heroOp);
     hero.style.transform = "translateY(" + (-p * 40) + "px)";
+    // con el texto ya desvanecido, los botones del hero no deben ser clicables ni enfocables
+    hero.style.visibility = heroOp < 0.02 ? "hidden" : "visible";
     counters.style.opacity = String(clamp((p - 0.08) / 0.12, 0, 1) * clamp(1 - (p - 0.9) / 0.08, 0, 1));
     hint.style.opacity = String(clamp(1 - p / 0.05, 0, 1));
     out.style.opacity = String(clamp((p - 0.9) / 0.08, 0, 1));
